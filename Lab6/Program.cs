@@ -1,9 +1,12 @@
-﻿namespace Lab6
+﻿using System.Diagnostics.Metrics;
+
+namespace Lab6
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Task 1:");
             List<Vehicle> vehicles = new List<Vehicle>();
 
             vehicles.Add(new Bicecle("Sport", 25));
