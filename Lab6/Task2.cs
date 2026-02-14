@@ -22,7 +22,7 @@ namespace Lab6
         }
         public override void Play()
         {
-            Console.WriteLine($"{name} грає мелодію на гітарі");
+            Console.WriteLine($"{name} грає мелодію");
         }
     }
     class Piano : Instrument
@@ -32,7 +32,7 @@ namespace Lab6
         }
         public override void Play()
         {
-            Console.WriteLine($"{name} грає мелодію на піаніно");
+            Console.WriteLine($"{name} грає мелодію");
         }
     }
     class Drums : Instrument
@@ -42,7 +42,7 @@ namespace Lab6
         }
         public override void Play()
         {
-            Console.WriteLine($"{name} грає ритм на барабанах");
+            Console.WriteLine($"{name} грає ритм");
         }
     }
 }

@@ -30,6 +30,20 @@ namespace Lab6
                 }
             }
             Console.ReadLine();
+
+            Console.WriteLine();
+            Console.WriteLine("Task 2:");
+            List<Instrument> instruments = new List<Instrument>();
+
+            instruments.Add(new Guitar("Гітара"));
+            instruments.Add(new Piano("Піаніно"));
+            instruments.Add(new Drums("Барабани"));
+
+            foreach (var instrument in instruments)
+            {
+                instrument.Play();
+            }
+            Console.ReadLine();
         }
     }
 }
