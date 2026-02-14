@@ -6,14 +6,27 @@
         {
             List<Vehicle> vehicles = new List<Vehicle>();
 
-            vehicles.Add(new Bicecle());
-            vehicles.Add(new Car());
-            vehicles.Add(new Airplane());
+            vehicles.Add(new Bicecle("Sport", 25));
+            vehicles.Add(new Car("BMW M5", 200));
+            vehicles.Add(new Airplane("Boeing 737", 800));
 
             foreach (var vehicle in vehicles)
             {
                 vehicle.Move();
             }
+            Console.WriteLine();
+            foreach (var vehicle in vehicles)
+            {
+                if (vehicle is Car car)
+                {
+                    car.refill();
+                }
+                else if (vehicle is Airplane airplane)
+                {
+                    airplane.refill();
+                }
+            }
+            Console.ReadLine();
         }
     }
 }
